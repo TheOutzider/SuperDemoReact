@@ -1,0 +1,68 @@
+.armory {
+  &__container {
+    width: 100%;
+    height: 72px;
+  }
+  &__topbox {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    height: 92px;
+    width: 280px;
+    image-rendering: auto;
+  }
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50px;
+  }
+  &__chains {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  &__banner {
+    margin-bottom: 5px;
+  }
+  &__sword {
+    margin-left: -115px;
+    margin-top: 22px;
+    position: absolute;
+    height: 100px;
+    width: 430px;
+    animation-name: dropdown;
+    animation-iteration-count: 1;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    z-index: 10;
+  }
+}
+
+.chain {
+  padding: 0;
+  &_one {
+    margin-right: 130px;
+    margin-top: -1px;
+  }
+  &_two {
+    margin-top: -1px;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-30%);
+  }
+  50% {
+    transform: translateY(+10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "HeroQuest": {
+    "Heroes": [
+      {
+        "name": "Barbarian",
+        "equipment": [
+          {
+            "name": "Broad Sword",
+            "price": 5,
+            "img" : "https://faitsdarmes.com/959-large_default/broadsword-rawlings.jpg"
+          },
+          {
+            "name": "Battle Axe",
+            "price": 10
+          },
+          {
+            "name": "Chain Mail",
+            "price": 20
+          }
+        ]
+      },
+      {
+        "name": "Elf",
+        "equipment": [
+          {
+            "name": "Long Sword",
+            "price": 5
+          },
+          {
+            "name": "Bow and Arrows",
+            "price": 10
+          },
+          {
+            "name": "Leather Armor",
+            "price": 15
+          }
+        ]
+      },
+      {
+        "name": "Dwarf",
+        "equipment": [
+          {
+            "name": "Battle Axe",
+            "price": 10
+          },
+          {
+            "name": "Hand Axe",
+            "price": 5
+          },
+          {
+            "name": "Chain Mail",
+            "price": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizard",
+        "equipment": [
+          {
+            "name": "Staff",
+            "price": 5
+          },
+          {
+            "name": "Dagger",
+            "price": 5
+          },
+          {
+            "name": "Leather Armor",
+            "price": 15
+          }
+        ]
+      }
+    ],
+    "Monsters": [
+      {
+        "name": "Goblin",
+        "loot": [
+          {
+            "name": "Gold Pieces",
+            "price": 5
+          },
+          {
+            "name": "Torch",
+            "price": 3
+          }
+        ]
+      },
+      {
+        "name": "Orc",
+        "loot": [
+          {
+            "name": "Gold Pieces",
+            "price": 10
+          },
+          {
+            "name": "Potion of Healing",
+            "price": 20
+          }
+        ]
+      },
+      {
+        "name": "Skeleton",
+        "loot": [
+          {
+            "name": "Gold Pieces",
+            "price": 5
+          },
+          {
+            "name": "Dagger",
+            "price": 5
+          }
+        ]
+      }
+    ]
+  }
+}

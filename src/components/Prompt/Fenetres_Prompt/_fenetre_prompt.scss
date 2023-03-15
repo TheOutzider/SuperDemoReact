@@ -1,0 +1,152 @@
+.promptFenetre {
+    position: absolute;
+    background-color: #fbefe2;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: inset -1px -1px 0 0 #c8c2ba, inset 1px 1px 0 0 #fff,
+      5px 5px 0 #0003;
+  
+    &__top {
+      width: 100%;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 20px;
+    }
+    &__close {
+      height: 15px;
+      width: 15px;
+      margin-right: 6px;
+      margin-top: 4px;
+      display: flex;
+      justify-content: center;
+      color: black;
+    }
+    &__interior {
+      display: block;
+      -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: pixelated;
+      width: 98.2%;
+      height: 420px;
+      margin: 6px;
+      border: 1px solid #000;
+      background-color: #000;
+    }
+    &__name {
+      color: black;
+      padding: 3px 0 0 5px;
+      height: 10px;
+      width: fit-content;
+      font-family: 'Chicago', sans-serif;
+      font-size: smaller;
+    }
+    &__footer {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 5px 5px 0 5px;
+    }
+.prompted {
+    color: white;
+    font-family: monospace;
+    white-space: pre;
+    overflow: hidden; 
+    margin: 0 auto;
+    animation: 
+    typing 0.8s steps(30, end),
+    blink-caret .5s step-end infinite,
+    boum 0.4s ease-in-out infinite;
+}
+
+.animation {
+  color: #fff;
+  font-size: 10px;
+  position: relative;
+  width: 780px;
+  height: fit-content;
+  overflow: hidden;
+  padding-top: 50px;
+
+  }
+  .animation p {
+    height: 50px;
+    width: 1342px;
+  position: relative;
+  animation: wave 12s linear infinite;
+  white-space: nowrap;
+  }
+
+  }
+  .animation img {
+    width: 22px;
+    height: 21px;
+    animation: animate 6s ease-in-out infinite;
+    animation-delay: calc(0.10s * var(--i));
+    padding: 2px;
+  }
+
+@keyframes wave {
+  0% {
+  transform: translateX(100%);
+  }
+  100% {
+  transform: translateX(-115%);
+  }
+}
+  @keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    10% {
+      transform: translateY(-20px);
+    }
+    20%{
+        transform: translateY(+20px);
+    }
+     30%{
+      transform: translateY(-20px);
+  }
+    40% {
+        transform: translateY(+20px);
+    }
+    50%{
+      transform: translateY(-20px);
+  }
+    60% {
+        transform: translateY(+20px);
+    }
+    70%{
+      transform: translateY(-20px);
+  }
+    80% {
+        transform:  translateY(+20%);
+    }
+    90%{
+      transform: translateY(-20px);
+  }
+    100% {
+       transform:  translateY(0%);
+    }
+
+  
+}
+@keyframes boum {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+        
+    }

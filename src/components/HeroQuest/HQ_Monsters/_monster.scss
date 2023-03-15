@@ -1,0 +1,21 @@
+table {
+    width: 350px;
+    height: 200px;
+  }
+    
+  th {
+    border-bottom: 3px solid rgb(83, 46, 10);
+  }
+    
+  td {
+    text-align: center;
+    border: 1px solid rgb(83, 46, 10);
+    border-radius: 5px;
+  }
+
+.monster {
+    width: fit-content;
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 30px;
+}

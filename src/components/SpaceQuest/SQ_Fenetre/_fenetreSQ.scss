@@ -1,0 +1,85 @@
+.SQFenetre {
+  position: absolute;
+  background-color: #fbefe2;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  width: 600px;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: inset -1px -1px 0 0 #c8c2ba, inset 1px 1px 0 0 #fff,
+    5px 5px 0 #0003;
+
+  &__top {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+  }
+  &__close {
+    height: 15px;
+    width: 15px;
+    margin-right: 6px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+  &__interior {
+    display: block;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    width: 97%;
+    height: 95.6%;
+    margin: 6px 0 0 8px;
+    border: 1px solid #000;
+    background-image: url(../../../assets/SpaceQuest/Fond.png);
+    animation: defilement 5s linear infinite;
+    div {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__name {
+    color: black;
+    padding: 3px 0 0 5px;
+    height: 10px;
+    width: fit-content;
+    font-family: "Chicago", sans-serif;
+    font-size: smaller;
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px 5px 0 5px;
+  }
+  &__score {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    position: absolute;
+    margin: 20px 0 0 250px;
+  }
+  &__shooter {
+    background-image: url(../../../assets/SpaceQuest/vaisseau.png);
+    background-position: center;
+    background-size: contain;
+  }
+  &__aliens {
+    background-image: url(../../../assets/SpaceQuest/aliens.png);
+    background-position: center;
+    background-size: contain;
+  }
+  &__boom {
+    background-color: red;
+  }
+  &__laser {
+    background-color: #FF2D95;
+  }
+}
+.container {
+  
+}

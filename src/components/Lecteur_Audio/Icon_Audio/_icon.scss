@@ -1,0 +1,32 @@
+.image {
+  height: 40px;
+  width: 40px;
+}
+
+.icon_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+}
+
+.iconset {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 60px;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 25px;
+}
+
+.iconName {
+  font-size: small;
+  font-weight: lighter;
+  text-align: center;
+}
+.iconalone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

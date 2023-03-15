@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  font-family: -apple-system, 'Chicago', BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  image-rendering: pixelated;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  border-bottom: 1px solid #000;
+}

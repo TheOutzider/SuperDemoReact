@@ -1,0 +1,68 @@
+.hqFenetre {
+    position: absolute;
+    background-color: #fbefe2;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    width: 808px;
+    height: 630px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: inset -1px -1px 0 0 #c8c2ba, inset 1px 1px 0 0 #fff,
+      5px 5px 0 #0003;
+  
+    &__top {
+      width: 99.4%;
+      background: linear-gradient(90deg, rgba(53,97,159,1) 0%, rgba(126,206,224,1) 100%);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 20px;
+      border: solid 2px #fbefe2;
+      border-radius: 7px 7px 0 0;
+    }
+    &__close {
+      height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    color: #1D1219;
+    background-color: #dcd5d9;
+
+    }
+    &__interior {
+      -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: pixelated;
+      width: 800px;
+      height: 600px;
+      margin: 0px 13px 20px 3px;
+      background-image: url(../../../assets/parch.jpg);
+      background-size: cover;
+      border: solid 1px black;
+      image-rendering: pixelated;
+      display: flex;
+      flex-direction: column;
+    }
+    &__name {
+      color: white;
+      padding: 3px 0 0 5px;
+      height: 10px;
+      width: fit-content;
+      font-family: 'Chicago', sans-serif;
+      font-size: smaller;
+    }
+    &__footer {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 5px 5px 0 5px;
+    }
+
+  }
+.nav__HQ{
+  position: absolute;
+    padding-top: 485px;
+    padding-left: 750px;
+}
