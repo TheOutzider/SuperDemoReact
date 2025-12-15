@@ -152,7 +152,7 @@ class YoutubePlayer extends React.Component {
               
             </div>
         <div className="trackBox">
-          <marquee className="track">{trackName}</marquee>
+          <div className="track">{trackName}</div>
         </div>
         <div className="artiste__box">
           <div className="artiste">{artistName}</div>
