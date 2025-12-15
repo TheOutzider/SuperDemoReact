@@ -4,6 +4,7 @@ function ScriptSQ() {
   const [aliensInvaders, setAliensInvaders] = React.useState([]);
   const actualPosition = React.useRef(678);
   const laserPosition = React.useRef(500);
+  const laserIntervalRef = React.useRef(null);
   let getDownRight = true;
   let getDownLeft = true;
   let direction = 1;
@@ -73,7 +74,11 @@ function ScriptSQ() {
     console.log(laserPosition);
 
     if (e.keyCode === 32) {
-      setInterval(() => {
+      // Clear any existing interval to prevent memory leaks
+      if (laserIntervalRef.current) {
+        clearInterval(laserIntervalRef.current);
+      }
+      laserIntervalRef.current = setInterval(() => {
         console.log("youpi?");
         lasermoves();
       }, 100);
