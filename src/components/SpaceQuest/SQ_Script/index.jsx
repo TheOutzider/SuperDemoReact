@@ -34,6 +34,7 @@ function ScriptSQ() {
       if (allDiv[aliensInvaders[i]].hasAttribute("data-right") === true) {
         if (getDownRight) {
           direction = 23;
+          // eslint-disable-next-line no-loop-func
           setTimeout(() => {
             getDownRight = false;
             console.log(getDownRight);
@@ -44,6 +45,7 @@ function ScriptSQ() {
       } else if (allDiv[aliensInvaders[i]].hasAttribute("data-left") === true) {
         if (getDownLeft) {
           direction = 23;
+          // eslint-disable-next-line no-loop-func
           setTimeout(() => {
             getDownLeft = false;
             console.log(getDownLeft);
@@ -67,12 +69,11 @@ function ScriptSQ() {
   const HandleKeyLaser = (e) => {
     const allDiv = document.querySelectorAll(".container div");
     laserPosition.current = actualPosition;
-    let laserId;
     console.log("youpi.event");
     console.log(laserPosition);
 
     if (e.keyCode === 32) {
-      laserId = setInterval(() => {
+      setInterval(() => {
         console.log("youpi?");
         lasermoves();
       }, 100);
@@ -131,7 +132,8 @@ function ScriptSQ() {
 
     setAliensInvaders(aliensInvaders);
     setInterval(AlienMoves, 1000);
-  }, [aliensInvaders]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
